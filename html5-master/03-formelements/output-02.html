@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Output Tag - Powered by TKHTS.com</title>
+</head>
+<body>
+
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 
+
+0<input type="range" id="a" value="50">100
+<br>
+0<input type="range" id="b" value="50">100
+<br><br>Sum of these two range values is=
+<output name="x" />
+</form>
+<form  oninput="amount.value = (hours.valueAsNumber * rate.valueAsNumber) + ((hours.valueAsNumber * rate.valueAsNumber) * vat.valueAsNumber)">
+ <legend>Invoice</legend>  
+ <p><label for="hours">Number of hours</label> 
+ <input type="number" min="0" id="hours" name="hours">
+ </p>  
+ <p><label for="rate">Rate</label> 
+ <span>£</span><input type="number" min="0" id="rate" name="rate">
+ </p>  
+ <p><label for="vat">VAT</label>
+  <input type="number" min="0" id="vat" value="0.20" name="vat"></p>  
+  <p>Total: <strong>£<output name="amount" for="hours rate vat">0</output></strong></p> </form>
+</body>
+</html>

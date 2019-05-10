@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .image {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            text-align:center;
+        }
+        .image:after {
+            content: "";
+            background: rgba(255,255,255,0.5);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: -100%;
+            left: 0px;
+            opacity: 0;
+            transition: 2s;
+        }
+        .image:hover:after {
+            opacity: 1;
+            bottom: 0%;
+            transition: 2s;
+        }
+        .image .desc{
+            position: absolute;
+            top:-10%;
+            transition: 2s;
+            color:black;
+            left:35%;
+            z-index: 1000;
+        }
+        .image:hover .desc{
+            top:45%;
+            transition: 2s;
+        }
+          .image .image1{
+            position: absolute;
+            top:100%;
+            transition: 2s;
+            opacity: 0;
+        }
+        .image:hover .image1{
+            top:0%;
+            transition: 2s;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="image">
+        <img src="images/globe%2013.jpg" alt="image">
+        <div class="image1"><img src="images/pc12.jpg"></div>
+        <div class="desc">This is demo</div>
+        
+    </div>
+    
+</body>
+</html>
