@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0;
+padding:0;
+}
+.s1{
+	width:100%;
+	height:50px;
+	line-height:50px;
+text-align:center;
+}
+.a1{
+	width:100%;
+	height:50px;
+	float:left;
+	
+}
+.a2{
+	width:100%;
+	height:50px;
+	float:left;
+	background-color:pink;
+	display:none;
+	position:relative;
+}
+.a3{
+	width:100%;
+	height:200px;
+	top:50px;
+	left:0;
+	background-color:red;
+	display:none;
+	position:absolute;
+}
+.d1{
+	width:30px;
+	height:30px;
+	top:10px;
+	right:5%;
+	background-color:brown;
+	
+	position:absolute;
+}
+
+#ff:target{display:block;
+}
+
+ul{width:100%;
+height:50px;
+margin:0;
+padding:0;
+}
+li{width:25%;
+height:50px;
+background-color:red;
+float:left;
+list-style-type:none;
+
+}
+li:hover{background-color:yellow;
+}
+@media (max-width:769px)
+{
+	.a1{display:none;
+	}
+	.a2{display:block;
+	}
+}
+
+</style>
+</head>
+
+<body>
+<div class="s1">
+<div class="a1">
+<ul>
+<li>home</li>
+<li>about</li>
+<li>contact</li>
+<li>services</li>
+</ul>
+</div>
+<div class="a2"><a href="#ff">sanjay</a>
+<a href="#ff"><div class="d1"></div></a>
+<div class="a3" id="ff">
+<div class="a4">Home</div>
+<div class="a4">About</div>
+<div class="a4">Contact</div>
+<div class="a4">Sevices</div>
+</div>
+</div>
+</div>
+</body>
+</html>
